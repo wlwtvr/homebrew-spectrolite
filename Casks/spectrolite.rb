@@ -11,4 +11,9 @@ cask "spectrolite" do
 
   app "Spectrolite.app"
 
+  zap trash: [
+    "~/Library/Preferences/com.electron.spectrolite.plist",
+    "~/Library/Application Support/spectrolite",
+  ]
+
 end
